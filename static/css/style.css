@@ -1,0 +1,40 @@
+/* style navigation bar */
+.bs-example {
+    height:35px;
+}
+
+.nav-text-size {
+    font-size:13px;
+}
+.mobile-style {
+    color:rgb(226, 166, 203);
+    font-size: 22px !important;
+    
+    }
+.email-style{
+    color:teal;
+    font-size: 15px !important;
+}
+.facebook-style {
+    color:rgb(57, 142, 238);
+    font-size: 16px !important;
+}
+#set-top {
+    position: relative;
+    top: -4px;
+}
+.insta-style {
+    color:green;
+    font-size: 16px !important;
+}
+.set-font {
+  font-family:Arizonia;
+  text-align: center !important;
+  font-size:100px;
+  color: #f388c3;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+}
+.set_image {
+    position: relative;
+    top: -21px;
+}

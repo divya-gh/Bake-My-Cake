@@ -29,42 +29,69 @@
 </head>
 
 
-<body class="border border-dark boder-1">
+<body class="border border-dark boder-1" >
 
-<!-- navigation Bar -->
-<div class="">
-    <nav class="navbar navbar-expand-md navbar-light bg-light bs-example pt-0 pb-0">
-        <a href="#" class="navbar-brand">
-            <img src="/static/Images/cakePic.png" height="20" alt="bakeMyCake"><span class="h6 text-success"> &#9; Bake My Cake</span>
+<!-- navigation Bar 1-->
+<div>
+    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-light bs-example pt-0 pb-0" style="background-image:url('/static/Images/blueBackground.png');background-size: cover;">
+        <a href="#" class="navbar-brand pl-2 align-items-center">
+            <img src="/static/Images/cakePic.png" height="20" alt="bakeMyCake"><span class="h5" style="font-family:Arizonia;color:pink"> &#9; Bake My Cake</span>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="collapse navbar-collapse " id="navbarCollapse">
-            <!-- <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Profile</a>
-                <a href="#" class="nav-item nav-link">Messages</a>
-                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
-            </div> -->
-            <div class="navbar-nav ml-auto nav-text-size">
-                <a href="#" class="nav-item nav-link text-primary"><i class="fa fa-mobile-phone mobile-style" aria-hidden="true"></i>&#9;<span id="set-top">210-233-0090</span></a>
-                <a href="#" class="nav-item nav-link text-primary"><i class="fa fa-envelope email-style" aria-hidden="true"></i>&#9;bakemycake@gmail.com</a>
+            <div class="navbar-nav ml-auto nav-text-size pr-5 mr-5">
+                <a href="#" class="nav-item nav-link" style="color:rgb(235, 203, 99);"><i class="fa fa-mobile-phone mobile-style" aria-hidden="true"></i>&#9;<span id="set-top">210-233-0090</span></a>
+                <a href="#" class="nav-item nav-link" style="color:rgb(235, 203, 99);"><i class="fa fa-envelope email-style" aria-hidden="true"></i>&#9;bakemycake@gmail.com</a>
                 <a href="#" class="nav-item nav-link"><i class="fa fa-facebook facebook-style" aria-hidden="true"></i></a>
-                <a href="#" class="nav-item nav-link text-primary"><i class="fa fa-instagram insta-style"></i></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-instagram insta-style"></i></a>
             </div>
-        </div>
+        </div>       
     </nav>
 </div>
 
 <!-- row1 -->
-  <div class="container-fluid hero-image flex-grow-1">
-    <div class="hero-text text-center">
+<div class="container-fluid p-0">
+<nav class="navbar-nav navbar-fixed-top">
+  <div class="container-fluid flex-grow-1" style="background-color:rgb(203, 227, 243);">
+    <div class="header text-center">
       <span class="set-font m-0">Shanya's</span><br>
       <img id="reset" class="set_image" src="/static/Images/cakesWithLove.jpg">    
     </div>
+  </div>  
+</nav>
+<!-- 2nd Menu------------------------------- -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(203, 227, 243);">
+  <div class="mx-auto d-sm-flex d-block flex-sm-nowrap" style="color:black;font-weight:bold;">
+    <a class="navbar-item nav-link mr-md-4 about" style="color: #f388c3;" href="#">About</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-dark" >
+        <li class="nav-item">
+            <a class="nav-link ml-md-2 mr-md-2 active-link" href="#">Cakes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mr-md-2" href="#">Cup Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-md-2 href="#">Cookies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mr-md-2" href="#">Flavors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mr-md-2" href="#">Specials</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    
   </div>
+</nav>
+</div>
 
 
 <!-- Footer -->
@@ -88,6 +115,18 @@
     <!-- Launch Page -->
     <script src="/static/js/launch.js"></script>
   
-  
+  <!-- script for header shrink -->
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "30px";
+      } else {
+        document.getElementById("header").style.fontSize = "90px";
+      }
+    }
+    </script>
   </body>
   </html>

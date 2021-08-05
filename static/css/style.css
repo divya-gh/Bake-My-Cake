@@ -49,3 +49,8 @@ a.nav-link.about:hover  {
 a.nav-link.active-link:active  {
     color:hotpink !important;    
 }
+
+pre { 
+    white-space: pre-wrap; 
+    word-break: break-word;
+}

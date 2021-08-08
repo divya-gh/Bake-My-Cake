@@ -54,3 +54,12 @@ pre {
     white-space: pre-wrap; 
     word-break: break-word;
 }
+
+.set-head {
+    padding-top:60px;
+}
+
+.set-para {
+    position: relative;
+    top: -10px!important;
+}

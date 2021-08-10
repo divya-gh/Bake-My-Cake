@@ -23,6 +23,11 @@
 <!-- Our CSS -->
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
+<!-- carrousal links -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <!-- JQuery from google CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -112,9 +117,64 @@
       <div class="text-center" style="background-image:url('/static/Images/2nd_background2.jpg');background-size:cover;background-repeat:no-repeat;height:270px;opacity: 0.6;">
         <h3 class="set-head m-0" style="font-family:Bodoni MT;color:rgb(1, 1, 3);font-size:40px;font-weight:bold;opacity:4;">Got to order now?</h3>
         <p class="m-0 set-para" style="font-family:Georgia;color:rgb(1, 7, 1);font-size:16px;font-weight:bold;">Select a cake from our <a href="#">Menu</a> or send us an <a href="#">E-mail</a> with a picture and flavors of your choice.</p>
-    </div>
+      </div>
     </pre>
+    <!-- Carousel code -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+      <div class="items">
+        <div class="card">
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
+            <div class="card-body">
+                <h5 class="card-title">Delbert Simonas</h5>
+                <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+            <div class="card-body">
+                <h5 class="card-title">Tikoh Amin</h5>
+                <p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+            <div class="card-body">
+                <h5 class="card-title">Malachi Lensing</h5>
+                <p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
+            <div class="card-body">
+                <h5 class="card-title">Christian Isla</h5>
+                <p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
+            <div class="card-body">
+                <h5 class="card-title">Lori Charles</h5>
+                <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
+            </div>
+        </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+  <!-- carousel end -->
+  </div>
 </div>
 <div class="container-fluid" >
   <!-- <div class="pt-5" style="background-image:url('/static/Images/2nd_background.jpg');background-size:cover;background-repeat:no-repeat;height:350px;opacity: 0.7;">
@@ -143,7 +203,8 @@
    <!--Our javaScript file-->
     <!---------------------------------------------->
     <!-- Launch Page -->
-    <script src="/static/js/launch.js"></script>
+    <script src="/static/js/carosel.js"></script>
+
   
   <!-- script for header shrink -->
   <script>
